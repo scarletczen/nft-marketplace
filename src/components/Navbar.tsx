@@ -1,23 +1,27 @@
-import React from "react";
 import SearchIcon from "../assets/icons/search.svg";
 import Logo from "../assets/icons/nft-logo.svg";
-type Props = {};
+interface Props {
+  handleDark: () => void;
+}
 
-function Navbar({}: Props) {
+function Navbar({ handleDark }: Props) {
   return (
     <>
-      <div className="w-full h-20 px-20 py-5 grid grid-cols-3 font-orbitron font-bold text-sm ">
-        <div className="flex justify-start items-center  text-white">
+      <div className="w-full h-20 px-20 py-5 grid grid-cols-2 md:grid-cols-3 font-orbitron font-bold text-sm ">
+        <div className="flex justify-start items-center text-black dark:text-white">
           <img className="h-10 w-10 primaryFilter mx-1" src={Logo} alt="logo" />
           <h2 className="mx-1 text-lg">Nft- market</h2>
+          <button onClick={handleDark} className="mx-2 text-sm">
+            Dark mode
+          </button>
         </div>
-        <div className="flex justify-between items-center text-white ">
-          <h2>Discover</h2>
+        <div className="justify-between hidden md:flex items-center text-black dark:text-white ">
+          <h2 className="dark:text-white ">Discover</h2>
           <h2>Features</h2>
           <h2>Market</h2>
           <h2>Explore</h2>
         </div>
-        <div className="flex justify-end items-center text-white ">
+        <div className="justify-end hidden md:flex items-center text-white ">
           <img className="whiteFilter h-6 w-6" src={SearchIcon} alt="search" />
           <div className="poligon grad nestButton">
             <button className="text-sm font-normal text-white flex items-center">

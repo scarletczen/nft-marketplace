@@ -3,13 +3,14 @@ import PrimaryBlob from "../assets/blobs/primary.svg";
 import SecondaryBlob from "../assets/blobs/secondary.svg";
 interface Props {
   children: JSX.Element[];
+  dark: boolean;
 }
 
 function Layout({ children }: Props) {
   return (
     <>
-      <div className="relative">
-        <div className="relative w-screen h-screen bg-dark">
+      <div className={`relative`}>
+        <div className="relative w-screen h-screen bg-white dark:bg-darkColor">
           <img
             className="absolute -top-20 left-40 h-2/4 w-1/4"
             src={PrimaryBlob}
@@ -31,7 +32,7 @@ function Layout({ children }: Props) {
             src={PrimaryBlob}
           />
         </div>
-        <div className="relative w-screen h-screen bg-dark">
+        <div className="relative w-screen h-screen bg-white dark:bg-darkColor">
           <img
             className="absolute -top-20 left-40 h-2/4 w-1/4"
             src={PrimaryBlob}

@@ -1,4 +1,3 @@
-import React from "react";
 import Items from "./Items";
 
 type Props = {};
@@ -7,7 +6,7 @@ function FeaturedSection({}: Props) {
   return (
     <div className="h-1/2 p-20 font-bold font-orbitron">
       <div className="flex justify-between">
-        <h1 className="text-5xl text-white">Featured Items</h1>
+        <h1 className="text-5xl text-black  dark:text-white">Featured Items</h1>
         <div className="poligon grad nestButton">
           <button className="text-sm font-normal text-white flex items-center">
             <div className="poligon neutral mx-0">

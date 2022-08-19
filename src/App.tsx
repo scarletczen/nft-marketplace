@@ -1,17 +1,21 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import "./App.css";
-import PrimaryBlob from "./assets/blobs/primary.svg";
-import SecondaryBlob from "./assets/blobs/secondary.svg";
 import FeaturedSection from "./components/FeaturedSection";
 import HeroSection from "./components/HeroSection";
 import Layout from "./components/Layout";
 import Navbar from "./components/Navbar";
 
+export const ThemeContext = createContext({});
+
 function App() {
+  const [dark, setDark] = useState(true);
+  const handleDark = () => {
+    setDark((prev) => !prev);
+  };
   return (
-    <div className="App">
+    <div className={`App ${dark ? "dark" : ""}`}>
       <Layout>
-        <Navbar />
+        <Navbar handleDark={handleDark} />
         <HeroSection />
         <FeaturedSection />
       </Layout>
