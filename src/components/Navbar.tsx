@@ -19,8 +19,12 @@ function Navbar({}: Props) {
         </div>
         <div className="flex justify-end items-center text-white ">
           <img className="whiteFilter h-6 w-6" src={SearchIcon} alt="search" />
-          <div className="poligon shallow">
-            <button className="">Log in</button>
+          <div className="poligon grad nestButton">
+            <button className="text-sm font-normal text-white flex items-center">
+              <div className="poligon neutral mx-0">
+                <button className="text-sm text-white">Log in</button>
+              </div>
+            </button>
           </div>
           <div className="poligon grad">
             <button className="">Connect Wallet</button>

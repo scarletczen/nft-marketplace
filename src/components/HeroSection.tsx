@@ -22,8 +22,12 @@ function HeroSection({}: Props) {
           <div className="poligon grad">
             <button className="text-xl text-white">Explore</button>
           </div>
-          <div className="poligon">
-            <button className="text-xl text-white">Learn more</button>
+          <div className="poligon grad nestButton">
+            <button className="text-sm font-normal text-white flex items-center">
+              <div className="poligon neutral mx-0">
+                <button className="text-xl text-white">Learn more</button>
+              </div>
+            </button>
           </div>
         </div>
         <hr className="border-1 border-secondarydark" />
@@ -47,16 +51,28 @@ function HeroSection({}: Props) {
       <div className="absolute h-full w-1/2 top-20 right-20">
         <div className="relative h-full w-full">
           <img
-            className="absolute z-10 top-1/3 bottom-1/3 left-10 h-1/2 w-1/2 clippedImage"
-            src={Face1}
-          />
-          <img
-            className="absolute top-0 right-0 h-1/2 w-1/2 clippedImage"
+            className="heroFirst absolute top-0 right-0  clippedImage"
             src={Face2}
           />
-          <div className="z-20 text-white text-xl absolute bottom-1/4 right-1/3">
-            <div className="poligon grad">
-              <button className="text-xl text-white">Learn more</button>
+          <img
+            className="heroSecond absolute z-10 top-1/3 bottom-1/3 left-1/3  clippedImage"
+            src={Face1}
+          />
+          <div className="z-20 text-white text-xl absolute bottom-1/3 right-0">
+            <div className="poligon neutral">
+              <button className="text-sm font-normal text-white flex items-center">
+                <div className="mr-5">
+                  <h5>Current Bid</h5>
+                  <h6 className="text-gray-400">0.99 eth</h6>
+                </div>
+                <div className="mr-5">
+                  <h5>Current Bid</h5>
+                  <h6 className="text-gray-400">25 hrs</h6>
+                </div>
+                <div className="poligon grad">
+                  <button className="text-sm text-white">Start Bid</button>
+                </div>
+              </button>
             </div>
           </div>
         </div>

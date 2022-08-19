@@ -47,15 +47,31 @@ body {
 }
 
 .poligon {
+  margin: 0px 8px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 150px;
-  height: 60px;
+  padding: 0.5rem 1.5rem;
   box-sizing: border-box;
   -webkit-clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
   clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
+}
+.poligon.grad.nestButton {
+  padding: 2px !important;
+}
+.poligon.grad.nestButton .poligon {
+  margin: 0px 0px !important;
+}
+
+.heroFirst {
+  height: 400px;
+  width: 320px;
+}
+
+.heroSecond {
+  height: 270px;
+  width: 250px;
 }
 .poligon.grad {
   background: rgb(230, 65, 79);
@@ -65,8 +81,12 @@ body {
     rgba(34, 85, 177, 1) 100%
   );
 }
+.poligon.neutral {
+  background: #0b1a2f;
+  background: linear-gradient(120deg, rgb(21, 52, 110) 0%, #0b1a2f 25%);
+}
 
-.poligon div {
+.poligon > div {
   position: absolute;
   top: 2px; /* equal to border thickness */
   left: 2px; /* equal to border thickness */

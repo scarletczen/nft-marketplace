@@ -8,7 +8,13 @@ function FeaturedSection({}: Props) {
     <div className="h-1/2 p-20 font-bold font-orbitron">
       <div className="flex justify-between">
         <h1 className="text-5xl text-white">Featured Items</h1>
-        <button className="text-2xl text-white">View All Artwork</button>
+        <div className="poligon grad nestButton">
+          <button className="text-sm font-normal text-white flex items-center">
+            <div className="poligon neutral mx-0">
+              <button className="text-xl text-white">View All Artwork</button>
+            </div>
+          </button>
+        </div>
       </div>
       <div className="flex items-center justify-center">
         <Items />
