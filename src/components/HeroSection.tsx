@@ -47,13 +47,18 @@ function HeroSection({}: Props) {
       <div className="absolute h-full w-1/2 top-20 right-20">
         <div className="relative h-full w-full">
           <img
-            className="absolute z-10 bottom-20 left-10 h-1/2 w-1/2 clippedImage"
+            className="absolute z-10 top-1/3 bottom-1/3 left-10 h-1/2 w-1/2 clippedImage"
             src={Face1}
           />
           <img
             className="absolute top-0 right-0 h-1/2 w-1/2 clippedImage"
             src={Face2}
           />
+          <div className="z-20 text-white text-xl absolute bottom-1/4 right-1/3">
+            <div className="poligon grad">
+              <button className="text-xl text-white">Learn more</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
