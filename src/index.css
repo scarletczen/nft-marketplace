@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -30,4 +31,53 @@ body {
 .whiteFilter {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(103%)
     contrast(103%);
+}
+
+.primaryFilter {
+  filter: invert(32%) sepia(74%) saturate(4420%) hue-rotate(338deg)
+    brightness(100%) contrast(81%);
+}
+
+.clippedButton {
+  clip-path: polygon(25% 0%, 100% 0, 100% 50%, 75% 100%, 0 98%, 0% 50%);
+  border: solid 1px white;
+}
+
+.poligon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 60px;
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
+  clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
+}
+.poligon.grad {
+  background: rgb(230, 65, 79);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 65, 79, 1) 0%,
+    rgba(34, 85, 177, 1) 100%
+  );
+}
+
+.poligon div {
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 146px; /* container height - (border thickness * 2) */
+  height: 146px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
+  clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
+}
+
+.customGradient {
+  background: rgb(230, 65, 79);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 65, 79, 1) 0%,
+    rgba(34, 85, 177, 1) 100%
+  );
 }
