@@ -5,17 +5,14 @@ interface Props {
   handleDark: () => void;
 }
 
-function Navbar({ handleDark }: Props) {
+const Navbar = ({ handleDark }: Props) => {
   return (
     <>
-      <div className="w-full h-20 px-0 md:px-20 py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-orbitron font-bold text-sm ">
+      <div className="nav-bar">
         <div className="flex justify-center md:justify-start items-center text-black dark:text-white w-full">
           <img className="h-10 w-10 primaryFilter mx-1" src={Logo} alt="logo" />
           <h2 className="mx-1 text-lg">Nft- market</h2>
-          <button
-            onClick={handleDark}
-            className="mx-2 text-sm border-2 border-black dark:border-white rounded p-1 text-black hover:text-white dark:text-white hover:bg-secondary transition-all"
-          >
+          <button onClick={handleDark} className="theme-toggle">
             Dark mode
           </button>
         </div>
@@ -38,6 +35,6 @@ function Navbar({ handleDark }: Props) {
       </div>
     </>
   );
-}
+};
 
 export default Navbar;

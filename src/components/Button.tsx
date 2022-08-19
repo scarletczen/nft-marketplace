@@ -1,11 +1,9 @@
-import React from "react";
-
-type Props = {
+interface Props {
   variant: "filled" | "outlined";
   title: string;
-};
+}
 
-function Button({ variant, title }: Props) {
+const Button = ({ variant, title }: Props) => {
   if (variant === "filled") {
     return (
       <div className="poligon grad">
@@ -25,6 +23,6 @@ function Button({ variant, title }: Props) {
       </div>
     );
   }
-}
+};
 
 export default Button;

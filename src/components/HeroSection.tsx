@@ -1,13 +1,13 @@
 import HeroTitle from "./HeroTitle";
 import Showcase from "./Showcase";
 
-function HeroSection() {
+const HeroSection = () => {
   return (
-    <div className="relative flex-col p-10 md:p-20 font-bold items-start h-3/4 font-orbitron">
+    <div className="hero-section">
       <HeroTitle />
       <Showcase />
     </div>
   );
-}
+};
 
 export default HeroSection;

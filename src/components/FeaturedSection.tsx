@@ -1,6 +1,6 @@
 import Items from "./Items";
 
-function FeaturedSection() {
+const FeaturedSection = () => {
   return (
     <div className="h-1/2 p-10 md:p-20 font-bold font-orbitron">
       <div className="flex justify-between items-center">
@@ -20,6 +20,6 @@ function FeaturedSection() {
       <Items />
     </div>
   );
-}
+};
 
 export default FeaturedSection;

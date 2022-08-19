@@ -1,6 +1,7 @@
 import Button from "./Button";
+import StatsTitle from "./StatsTitle";
 
-function HeroTitle() {
+const HeroTitle = () => {
   return (
     <>
       <h1 className="text-3xl md:text-4xl lg:text-6xl text-black dark:text-white relative leading-normal">
@@ -20,24 +21,15 @@ function HeroTitle() {
         </div>
         <hr className="border-1 border-secondarydark" />
         <div className="my-10 flex justify-evenly">
-          <div className="text-xl md:text-4xl text-black dark:text-white">
-            <h3>120+</h3>
-            <h6 className="text-sm font-normal">Artwork</h6>
-          </div>
+          <StatsTitle title="120+" subTitle="Artwork" />
           <div className="h-15 border-l-2 border-secondarydark"></div>
-          <div className="text-xl md:text-4xl text-black dark:text-white">
-            <h3>500k+</h3>
-            <h6 className="text-sm font-normal">Auction</h6>
-          </div>
+          <StatsTitle title="500k+" subTitle="Auction" />
           <div className="border-l-2  border-secondarydark"></div>
-          <div className="text-xl md:text-4xl text-black dark:text-white">
-            <h3>245+</h3>
-            <h6 className="text-sm font-normal">Artist</h6>
-          </div>
+          <StatsTitle title="245+" subTitle="Artist" />
         </div>
       </div>
     </>
   );
-}
+};
 
 export default HeroTitle;

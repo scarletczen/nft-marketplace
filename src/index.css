@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CUSTOM TAILWIND CLASSES */
+@layer components {
+  .nav-bar {
+    @apply w-full h-20 px-0 md:px-20 py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-orbitron font-bold text-sm;
+  }
+  .theme-toggle {
+    @apply mx-2 text-sm border-2 border-black dark:border-white rounded p-1 text-black hover:text-white dark:text-white hover:bg-secondary transition-all;
+  }
+  .hero-section {
+    @apply relative flex-col p-10 md:p-20 font-bold items-start h-3/4 font-orbitron;
+  }
+}
+
+/* GLOBAL CONTAINER STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +23,7 @@
 }
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Orbitron, Inter, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,12 +31,23 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* GLASSMORPHISM CONTAINER */
 .glass {
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
 }
 
+/* GRADIENT */
+.customGradient {
+  background: linear-gradient(
+    90deg,
+    rgba(230, 65, 79, 1) 0%,
+    rgba(34, 85, 177, 1) 100%
+  );
+}
+
+/* COLOR FILTERS FOR SVG */
 .whiteFilter {
   filter: invert(100%) sepia(0%) saturate(3549%) hue-rotate(256deg)
     brightness(75%) contrast(129%);
@@ -33,6 +58,7 @@
     brightness(100%) contrast(81%);
 }
 
+/* CLIP PATHS FOR BUTTONS */
 .clippedButton {
   clip-path: polygon(25% 0%, 100% 0, 100% 50%, 75% 100%, 0 98%, 0% 50%);
   border: solid 1px white;
@@ -40,7 +66,7 @@
 .clippedImage {
   clip-path: polygon(25% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 25%);
 }
-
+/* CUSTOM BUTTONS */
 .poligon {
   margin: 0px 8px;
   position: relative;
@@ -59,16 +85,6 @@
 }
 .poligon.grad.nestButton .poligon {
   margin: 0px 0px !important;
-}
-
-.heroFirst {
-  height: 400px;
-  width: 320px;
-}
-
-.heroSecond {
-  height: 270px;
-  width: 250px;
 }
 .poligon.grad {
   background: rgb(230, 65, 79);
@@ -92,11 +108,13 @@
   clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
 }
 
-.customGradient {
-  background: rgb(230, 65, 79);
-  background: linear-gradient(
-    90deg,
-    rgba(230, 65, 79, 1) 0%,
-    rgba(34, 85, 177, 1) 100%
-  );
+/* SHOWCASE IMAGES */
+.heroFirst {
+  height: 400px;
+  width: 320px;
+}
+
+.heroSecond {
+  height: 270px;
+  width: 250px;
 }

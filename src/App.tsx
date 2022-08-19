@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import FeaturedSection from "./components/FeaturedSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";

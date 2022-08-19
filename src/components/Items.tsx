@@ -4,7 +4,7 @@ import Item2 from "../assets/images/item2.png";
 import Item3 from "../assets/images/item3.png";
 import Item4 from "../assets/images/item4.png";
 
-function Items() {
+const Items = () => {
   return (
     <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row">
       <ItemCard display={Item1} title={"Neon Green"} />
@@ -13,6 +13,6 @@ function Items() {
       <ItemCard display={Item4} title={"Thinker"} />
     </div>
   );
-}
+};
 
 export default Items;

@@ -4,7 +4,7 @@ interface Props {
   children: JSX.Element[];
 }
 
-function GlassBackground({ children }: Props) {
+const GlassBackground = ({ children }: Props) => {
   return (
     <>
       <div className="relative w-full h-full bg-white dark:bg-darkColor">
@@ -30,6 +30,6 @@ function GlassBackground({ children }: Props) {
       </div>
     </>
   );
-}
+};
 
 export default GlassBackground;
