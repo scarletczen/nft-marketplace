@@ -7,7 +7,7 @@ interface Props {
 function Navbar({ handleDark }: Props) {
   return (
     <>
-      <div className="w-full h-20 px-20 py-5 grid grid-cols-2 md:grid-cols-3 font-orbitron font-bold text-sm ">
+      <div className="w-full h-20 px-20 py-5 grid grid-cols-3 md:grid-cols-3 font-orbitron font-bold text-sm ">
         <div className="flex justify-start items-center text-black dark:text-white">
           <img className="h-10 w-10 primaryFilter mx-1" src={Logo} alt="logo" />
           <h2 className="mx-1 text-lg">Nft- market</h2>

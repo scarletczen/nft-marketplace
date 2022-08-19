@@ -9,7 +9,7 @@ type Props = {};
 
 function Items({}: Props) {
   return (
-    <div className="mt-10 grid grid-cols-4 grid-flow-row">
+    <div className="mt-10 grid grid-cols-1 md:grid-cols-4 grid-flow-row pb-20">
       <ItemCard display={Item1} title={"Greek"} />
       <ItemCard display={Item2} title={"Greek"} />
       <ItemCard display={Item3} title={"Greek"} />
