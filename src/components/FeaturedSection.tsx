@@ -10,7 +10,7 @@ function FeaturedSection({}: Props) {
         <h1 className="text-5xl text-white">Featured Items</h1>
         <button className="text-2xl text-white">View All Artwork</button>
       </div>
-      <div className="">
+      <div className="flex items-center justify-center">
         <Items />
       </div>
     </div>
