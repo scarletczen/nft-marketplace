@@ -6,7 +6,7 @@ import Item4 from "../assets/images/item4.png";
 
 function Items() {
   return (
-    <div className="mt-10 grid grid-cols-1 md:grid-cols-4 grid-flow-row pb-20">
+    <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row">
       <ItemCard display={Item1} title={"Neon Green"} />
       <ItemCard display={Item2} title={"Museum"} />
       <ItemCard display={Item3} title={"404"} />

@@ -3,7 +3,7 @@ import Showcase from "./Showcase";
 
 function HeroSection() {
   return (
-    <div className="relative flex-col p-20 font-bold items-start h-3/4 font-orbitron">
+    <div className="relative flex-col p-10 md:p-20 font-bold items-start h-3/4 font-orbitron">
       <HeroTitle />
       <Showcase />
     </div>

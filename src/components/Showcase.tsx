@@ -4,7 +4,7 @@ import Stars from "../assets/graphics/stars.png";
 
 function Showcase() {
   return (
-    <div className="absolute hidden md:block h-full w-1/2 top-20 right-20">
+    <div className="absolute hidden md:block h-full w-1/3 lg:w-1/2 top-20 right-20">
       <div className="relative h-full w-full">
         <img className="absolute left-1/2" src={Stars} alt="stars" />
         <img
@@ -13,7 +13,7 @@ function Showcase() {
           alt="stars"
         />
         <img
-          className="heroFirst absolute top-0 right-0  clippedImage"
+          className="heroFirst absolute top-0 right-0 clippedImage"
           src={Face2}
         />
         <img

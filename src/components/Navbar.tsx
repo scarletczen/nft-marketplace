@@ -8,8 +8,8 @@ interface Props {
 function Navbar({ handleDark }: Props) {
   return (
     <>
-      <div className="w-full h-20 px-20 py-5 grid grid-cols-3 md:grid-cols-3 font-orbitron font-bold text-sm ">
-        <div className="flex justify-start items-center text-black dark:text-white">
+      <div className="w-full h-20 px-0 md:px-20 py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-orbitron font-bold text-sm ">
+        <div className="flex justify-center md:justify-start items-center text-black dark:text-white w-full">
           <img className="h-10 w-10 primaryFilter mx-1" src={Logo} alt="logo" />
           <h2 className="mx-1 text-lg">Nft- market</h2>
           <button
@@ -19,7 +19,7 @@ function Navbar({ handleDark }: Props) {
             Dark mode
           </button>
         </div>
-        <div className="justify-between hidden md:flex items-center text-black dark:text-white ">
+        <div className="justify-between hidden lg:flex items-center text-black dark:text-white ">
           <h2 className="dark:text-white ">Discover</h2>
           <h2>Features</h2>
           <h2>Market</h2>
