@@ -1,4 +1,5 @@
 import React from "react";
+import Items from "./Items";
 
 type Props = {};
 
@@ -9,7 +10,9 @@ function FeaturedSection({}: Props) {
         <h1 className="text-5xl text-white">Featured Items</h1>
         <button className="text-2xl text-white">View All Artwork</button>
       </div>
-      <div className="h-1/2"></div>
+      <div className="">
+        <Items />
+      </div>
     </div>
   );
 }
