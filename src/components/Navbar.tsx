@@ -1,5 +1,6 @@
 import SearchIcon from "../assets/icons/search.svg";
 import Logo from "../assets/icons/nft-logo.svg";
+import Button from "./Button";
 interface Props {
   handleDark: () => void;
 }
@@ -11,7 +12,10 @@ function Navbar({ handleDark }: Props) {
         <div className="flex justify-start items-center text-black dark:text-white">
           <img className="h-10 w-10 primaryFilter mx-1" src={Logo} alt="logo" />
           <h2 className="mx-1 text-lg">Nft- market</h2>
-          <button onClick={handleDark} className="mx-2 text-sm">
+          <button
+            onClick={handleDark}
+            className="mx-2 text-sm border-2 border-black dark:border-white rounded p-1 text-black hover:text-white dark:text-white hover:bg-secondary transition-all"
+          >
             Dark mode
           </button>
         </div>
@@ -22,17 +26,13 @@ function Navbar({ handleDark }: Props) {
           <h2>Explore</h2>
         </div>
         <div className="justify-end hidden md:flex items-center text-white ">
-          <img className="whiteFilter h-6 w-6" src={SearchIcon} alt="search" />
-          <div className="poligon grad nestButton">
-            <button className="text-sm font-normal text-white flex items-center">
-              <div className="poligon neutral mx-0">
-                <button className="text-sm text-white">Log in</button>
-              </div>
-            </button>
-          </div>
-          <div className="poligon grad">
-            <button className="">Connect Wallet</button>
-          </div>
+          <img
+            className="whiteFilter h-6 w-6 mx-6"
+            src={SearchIcon}
+            alt="search"
+          />
+          <Button title="Log in" variant="outlined" />
+          <Button title="Connect Wallet" variant="filled" />
         </div>
         <hr className="col-span-12 mt-5 border-1 border-secondarydark" />
       </div>

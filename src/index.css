@@ -17,20 +17,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 .glass {
   background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(80px);
-  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
 }
 
 .whiteFilter {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(103%)
-    contrast(103%);
+  filter: invert(100%) sepia(0%) saturate(3549%) hue-rotate(256deg)
+    brightness(75%) contrast(129%);
 }
 
 .primaryFilter {
@@ -52,7 +47,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem;
+  min-width: 7rem;
+  min-height: 2rem;
   box-sizing: border-box;
   -webkit-clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
   clip-path: polygon(14% 0, 100% 0, 100% 75%, 85% 100%, 0 98%, 0 25%);
@@ -82,8 +79,7 @@ body {
   );
 }
 .poligon.neutral {
-  background: #0b1a2f;
-  background: linear-gradient(120deg, rgb(21, 52, 110) 0%, #0b1a2f 25%);
+  background: linear-gradient(120deg, rgb(21, 52, 110) 0%, #0b1a2fe0 25%);
 }
 
 .poligon > div {

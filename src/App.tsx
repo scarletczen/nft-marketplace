@@ -1,11 +1,9 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import FeaturedSection from "./components/FeaturedSection";
 import HeroSection from "./components/HeroSection";
-import Layout from "./components/Layout";
 import Navbar from "./components/Navbar";
-
-export const ThemeContext = createContext({});
+import GlassBackground from "./components/GlassBackground";
 
 function App() {
   const [dark, setDark] = useState(true);
@@ -14,11 +12,11 @@ function App() {
   };
   return (
     <div className={`App ${dark ? "dark" : ""}`}>
-      <Layout>
+      <GlassBackground>
         <Navbar handleDark={handleDark} />
         <HeroSection />
         <FeaturedSection />
-      </Layout>
+      </GlassBackground>
     </div>
   );
 }
