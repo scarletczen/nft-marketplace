@@ -1,9 +1,7 @@
-import React from "react";
 import PrimaryBlob from "../assets/blobs/primary.svg";
 import SecondaryBlob from "../assets/blobs/secondary.svg";
 interface Props {
   children: JSX.Element[];
-  dark: boolean;
 }
 
 function Layout({ children }: Props) {

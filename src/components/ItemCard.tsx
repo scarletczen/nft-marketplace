@@ -1,9 +1,7 @@
-import React from "react";
-
-type Props = {
+interface Props {
   display: any;
   title: string;
-};
+}
 
 function ItemCard({ display, title }: Props) {
   return (

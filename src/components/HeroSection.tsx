@@ -1,9 +1,7 @@
-import React from "react";
 import Face1 from "../assets/images/face1.jpg";
 import Face2 from "../assets/images/face2.jpg";
-type Props = {};
 
-function HeroSection({}: Props) {
+function HeroSection() {
   return (
     <div className="relative flex-col p-20 font-bold items-start h-3/4 font-orbitron">
       <h1 className="text-4xl md:text-6xl text-black dark:text-white relative leading-normal">

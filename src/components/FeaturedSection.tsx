@@ -1,8 +1,6 @@
 import Items from "./Items";
 
-type Props = {};
-
-function FeaturedSection({}: Props) {
+function FeaturedSection() {
   return (
     <div className="h-1/2 p-20 font-bold font-orbitron">
       <div className="flex justify-between">
