@@ -1,10 +1,11 @@
 import React from "react";
-
+import Face1 from "../assets/images/face1.jpg";
+import Face2 from "../assets/images/face2.jpg";
 type Props = {};
 
 function HeroSection({}: Props) {
   return (
-    <div className="flex-col p-20 font-bold items-start h-3/4 font-orbitron">
+    <div className="relative flex-col p-20 font-bold items-start h-3/4 font-orbitron">
       <h1 className="text-6xl text-white relative leading-normal">
         Discover The Digital Art <br /> NFT Marketplace
         <div className="outer_circle absolute bottom-0 w-20 bg-white">
@@ -41,6 +42,18 @@ function HeroSection({}: Props) {
             <h3>245+</h3>
             <h6 className="text-lg font-normal">Artist</h6>
           </div>
+        </div>
+      </div>
+      <div className="absolute h-full w-1/2 top-20 right-20">
+        <div className="relative h-full w-full">
+          <img
+            className="absolute z-10 bottom-20 left-10 h-1/2 w-1/2 clippedImage"
+            src={Face1}
+          />
+          <img
+            className="absolute top-0 right-0 h-1/2 w-1/2 clippedImage"
+            src={Face2}
+          />
         </div>
       </div>
     </div>
