@@ -1,8 +1,8 @@
 import ItemCard from "./ItemCard";
-import Item1 from "../assets/images/item1.png";
-import Item2 from "../assets/images/item2.png";
-import Item3 from "../assets/images/item3.png";
-import Item4 from "../assets/images/item4.png";
+import Item1 from "../../assets/images/item1.png";
+import Item2 from "../../assets/images/item2.png";
+import Item3 from "../../assets/images/item3.png";
+import Item4 from "../../assets/images/item4.png";
 
 const Items = () => {
   return (

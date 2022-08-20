@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../Common/Button";
 import StatsTitle from "./StatsTitle";
 
 const HeroTitle = () => {

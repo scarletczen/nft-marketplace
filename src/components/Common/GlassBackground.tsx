@@ -1,5 +1,5 @@
-import PrimaryBlob from "../assets/blobs/primary.svg";
-import SecondaryBlob from "../assets/blobs/secondary.svg";
+import PrimaryBlob from "../../assets/blobs/primary.svg";
+import SecondaryBlob from "../../assets/blobs/secondary.svg";
 interface Props {
   children: JSX.Element[];
 }

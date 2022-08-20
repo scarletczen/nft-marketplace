@@ -1,7 +1,7 @@
-import Face1 from "../assets/images/face1.jpg";
-import Face2 from "../assets/images/face2.jpg";
-import Stars from "../assets/graphics/stars.png";
-import CustomButton from "./CustomButton";
+import Face1 from "../../assets/images/face1.jpg";
+import Face2 from "../../assets/images/face2.jpg";
+import Stars from "../../assets/graphics/stars.png";
+import CustomButton from "../Common/CustomButton";
 
 const Showcase = () => {
   return (

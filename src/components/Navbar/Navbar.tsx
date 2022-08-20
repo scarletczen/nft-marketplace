@@ -1,6 +1,6 @@
-import SearchIcon from "../assets/icons/search.svg";
-import Logo from "../assets/icons/nft-logo.svg";
-import Button from "./Button";
+import SearchIcon from "../../assets/icons/search.svg";
+import Logo from "../../assets/icons/nft-logo.svg";
+import Button from "../Common/Button";
 interface Props {
   handleDark: () => void;
 }
@@ -24,7 +24,7 @@ const Navbar = ({ handleDark }: Props) => {
         </div>
         <div className="justify-end hidden md:flex items-center text-white ">
           <img
-            className="whiteFilter h-6 w-6 mx-6"
+            className="h-6 w-6 mx-6 whiteFilter"
             src={SearchIcon}
             alt="search"
           />
